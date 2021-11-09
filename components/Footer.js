@@ -3,11 +3,9 @@ import { useState, useEffect} from 'react'
 import {API} from "./API"
 
 const Footer = () => {
-  const[footerdetails, setFooterDetails]=useState({
-    configuration:null,
-    category:[]
-  })
-  const{configuration, category}=footerdetails
+  const[configuration, setConfiguration]=useState(null)
+  const[category, setCategory]=useState([])
+  
 
   useEffect(()=>{
     getConfig()
@@ -15,12 +13,12 @@ const Footer = () => {
   },[])
 async function getConfig(){
   const res= await axios.get(`${API}/api/config`)
-  setFooterDetails({ ...footerdetails, configuration:res.data.result[0]})
+  setConfiguration(res.data.result[0])
 }
 async function getCategory() {
   let res = await axios.get(`${API}/api/category`);
-  console.log(res.data)
-  setFooterDetails({ ...footerdetails, category:res?.data})
+  // console.log(res.data)
+  setCategory(res?.data)
 }
 
     return (
