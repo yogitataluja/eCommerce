@@ -15,9 +15,11 @@
   .dropdowncontent {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    margin-left: 40px;
+    background-color: #fff;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 5px;
     z-index: 1;
   }
   
@@ -32,4 +34,4 @@
   
   .dropdown:hover .dropdowncontent {display: block;}
   
-  /* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
+  .dropdown:hover .dropbtn {color: black;}
