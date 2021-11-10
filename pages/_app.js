@@ -30,7 +30,7 @@ function MyApp({ Component, pageProps }) {
 <Script src="assets/js/flickity.pkgd.min.js"></Script>
 <Script src="assets/js/lazysizes.min.js"></Script>
 <Script src="assets/js/js-cookie.min.js"></Script>
-<Script src="text/javascript" src="assets/js/jquery.countdown.min.js"></Script>
+<Script src="assets/js/jquery.countdown.min.js"></Script>
 <Script src="assets/js/photoswipe.min.js"></Script>
 <Script src="assets/js/photoswipe-ui-default.min.js"></Script>
 <Script src="assets/js/drift.min.js"></Script>
