@@ -11,7 +11,13 @@ const Footer = () => {
   useEffect(()=>{
     getConfig()
     getCategory()
+    getPages()
   },[])
+  const getPages = async () => {
+    const res = await axios.get(`${API}/api/page/view_page`);
+    console.log(res);
+    setPage(res.data.Page);
+  };
 async function getConfig(){
   const res= await axios.get(`${API}/api/config`)
   setConfiguration(res.data.result[0])
@@ -76,9 +82,7 @@ async function getCategory() {
 {category.length>0 && category?.map((item,index)=>
 {return(
   <li className="menu-item" key={index}><a href="#">{item.category}</a></li>)}
-)}
-                        
-                        								
+)}     								
                       </ul>
                     </div>
                   </div>
@@ -88,25 +92,18 @@ async function getCategory() {
                     <h3 className="widget-title fwsb flex al_center fl_between fs__16 mg__0 mb__30">
                       <span className="txt_title">Infomation</span><span className="nav_link_icon ml__5" />
                     </h3>
-                    <div className="menu_footer widget_footer">
+                    {page=== null? (<></>): (
+                      <>
+                      {page.map((i)=>(<div className="menu_footer widget_footer">
                       <ul className="menu">
                         <li className="menu-item">
-                          <a href="#">Contact us</a>
-                        </li>
-                        <li className="menu-item">
-                          <a href="#">Privacy Policy</a>
-                        </li>
-                        <li className="menu-item">
-                          <a href="#">Shipping &amp; Delivery</a>
-                        </li>
-                        <li className="menu-item">
-                          <a href="#">Terms &amp; Conditions</a>
-                        </li>
-                        <li className="menu-item">
-                          <a href="#">Returns &amp; Exchanges</a>
+                          <a href="#">{i.title}</a>
                         </li>
                       </ul>
-                    </div>
+                    </div>))}
+                      </>
+                    )}
+                    
                   </div>
                 </div>
                 <div className="col-lg-2 col-md-6 col-12 mb__50 order-lg-4 order-1">
@@ -135,7 +132,7 @@ async function getCategory() {
                         <div className="mc4wp-form-fields">
                           <div className="signup-newsletter-form row no-gutters pr oh">
                             <div className="col col_email">
-                              <input type="email" name="email" placeholder="Your email address" defaultValue className="tc tl_md input-text" required="required" />
+                              <input type="email" name="email" placeholder="Your email address" className="tc tl_md input-text" required="required" />
                             </div>
                             <div className="col-auto">
                               <button type="submit" className="btn_new_icon_false w__100 submit-btn truncate">
