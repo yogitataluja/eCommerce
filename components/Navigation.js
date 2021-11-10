@@ -27,8 +27,8 @@ const Navigation = ({active}) => {
     <div className={styles.dropdown} key={index}>
   <a className={styles.dropbtn} >{cate.category}</a>
   <div className={styles.dropdowncontent}>
-  {cate.subCategory.map((subcate)=>
-    <a href="#">{subcate.category}</a>
+  {cate.subCategory.map((subcate, index)=>
+    <a href="#" key={index}>{subcate.category}</a>
   )}
     
   </div>
