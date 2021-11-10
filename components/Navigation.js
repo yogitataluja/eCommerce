@@ -1,6 +1,7 @@
 import React, {useState, useEffect } from "react";
 import axios from "axios";
 import { API } from "./API";
+import styles from '../styles/Navigation.module.css'
 
 const Navigation = ({active}) => {
     let [category, setCategory] = useState([]);
@@ -20,45 +21,21 @@ const Navigation = ({active}) => {
       <div className="ntheader_wrapper pr z_200">
         <div className="container">
           <div className="header__bot border_true dn db_lg">
-            <nav className="nt_navigation tc hover_side_up nav_arrow_false">
-              <ul id="nt_menu_id" className="nt_menu in_flex wrap al_center">
-                {category.map((cate, index) => {
-                  return (
-                    <li
-                      key={index}
-                      className="type_mega menu_wid_cus menu-item has-children menu_has_offsets menu_center pos_center"
-                    >
-                      <div className="dropdown type_mn_link menu-item sub-column-item col-3">
-                        <a
-                          href={`/allProducts/${cate.category}`}
-                          style={{ color: "black", whiteSpace: "nowrap" }}
-                        >
-                          {cate.category === active ? (
-                            <strong>{cate.category}</strong>
-                          ) : (
-                            cate.category
-                          )}
-                        </a>
-
-                        <div className="dropdown-content">
-                          {cate.subCategory.map((subcate, index) => {
-                            return (
-                              <a
-                                href={`/shop/${cate.category}/${subcate.category}`}
-                                classNameName="lh__1 flex al_center pr kalles-lbl__nav-sale"
-                                key={index}
-
-                              >
-                                {subcate.category}
-                              </a>
-                            );
-                          })}
-                        </div>
-                      </div>
-                    </li>
-                  );
-                })}
-              </ul>
+            <nav className="nt_navigation tc hover_side_up nav_arrow_false" style={{marginTop:"30px"}} >
+    {category.map((cate,index)=>{
+      return(
+    <div className={styles.dropdown} key={index}>
+  <a className={styles.dropbtn} >{cate.category}</a>
+  <div className={styles.dropdowncontent}>
+  {cate.subCategory.map((subcate)=>
+    <a href="#">{subcate.category}</a>
+  )}
+    
+  </div>
+</div>
+      )
+    })}
+    
             </nav>
           </div>
         </div>

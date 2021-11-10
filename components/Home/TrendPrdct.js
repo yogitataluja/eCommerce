@@ -15,7 +15,7 @@ async function getProducts(){
 
     return (
         <>
-        <div className="container"> 
+        <div className="container" style={{marginTop:"45px"}}> 
         {/*trending products section*/}
         <div className="kalles-section nt_section type_carousel type_featured_collection_owl tp_se_cdt">
           <div className="kalles-cosmetics__trending-products container">

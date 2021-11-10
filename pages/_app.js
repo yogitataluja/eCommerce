@@ -25,7 +25,6 @@ function MyApp({ Component, pageProps }) {
 <Script src="assets/js/nouislider.min.js"></Script>
 <Script src="assets/js/jarallax.min.js"></Script>
 <Script src="assets/js/packery.pkgd.min.js"></Script>
-
 <Script src="assets/js/magnific-popup.min.js"></Script>
 <Script src="assets/js/flickity.pkgd.min.js"></Script>
 <Script src="assets/js/lazysizes.min.js"></Script>
