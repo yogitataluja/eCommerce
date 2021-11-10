@@ -1,6 +1,6 @@
 ( function ( $ ) {
         'use strict';
-        const body           = $( 'body' ),
+        const body           = document.querySelectorAll( 'body' ),
               $window        = $( window ),
               rtl_mode       = body.hasClass( 'rtl' ),
               $ld            = $( '#ld_cl_bar' ),
