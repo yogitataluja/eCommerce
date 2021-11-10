@@ -64,11 +64,11 @@ async function getBasicConfig(){
                             </div>
                             <div className="col-lg-6 col-md-6 col-6 tc">
                                 <div className="branding ts__05 lh__1">
-                                    <a className="dib" href="/">
+                                    <Link className="dib" href="/">
                                         <img className="w__100 logo_normal dn db_lg max-width__160px" src={logo[0]?.Headerlogo}/>
-                                        <img className="w__100 logo_sticky dn max-width__160px" src={logo[0]?.Headerlogo}/>
-                                        <img className="w__100 logo_mobile dn_lg max-width__105px" src={logo[0]?.Headerlogo}/>
-                                    </a>
+                                        {/* <img className="w__100 logo_sticky dn max-width__160px" src={logo[0]?.Headerlogo}/>
+                                        <img className="w__100 logo_mobile dn_lg max-width__105px" src={logo[0]?.Headerlogo}/> */}
+                                    </Link>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-md-3 col-3 tr">

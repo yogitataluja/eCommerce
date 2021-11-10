@@ -94,8 +94,8 @@ async function getCategory() {
                     </h3>
                     {page=== null? (<></>): (
                       <>
-                      {page.map((i)=>(<div className="menu_footer widget_footer">
-                      <ul className="menu">
+                      {page.map((i,index)=>(<div className="menu_footer widget_footer">
+                      <ul className="menu" key={index}>
                         <li className="menu-item">
                           <a href="#">{i.title}</a>
                         </li>
