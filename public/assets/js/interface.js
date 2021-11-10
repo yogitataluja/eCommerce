@@ -2271,7 +2271,7 @@
         } );
 
         if ( !touchevents ) {
-            body.hoverIntent( {
+            body.hoverIntent({
                 selector    : '.nt_swatch_on_bg',
                 sensitivity : 6,
                 interval    : 100,
