@@ -11,8 +11,7 @@ export default function Home() {
   return (<>
     <Head>
     <title>Home</title>
-    <script   src="assets/js/interface.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.hoverIntent.min.js"></script>
+    
     </Head>
     
     <div id="nt_content">

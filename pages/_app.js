@@ -19,7 +19,8 @@ function MyApp({ Component, pageProps }) {
     <link rel="stylesheet" href="assets/css/home-default.css"/>
     <link rel="stylesheet" href="assets/css/blog.css"></link>
     </Head>
-    
+    {/* <Script  type="text/javascript"  src="assets/js/interface.js"></Script> */}
+    {/* <Script type="text/javascript" src="assets/js/jquery.hoverIntent.min.js"></Script> */}
     <Script type="text/javascript" src="assets/js/jquery-3.5.1.min.js"></Script>
 <Script src="assets/js/nouislider.min.js"></Script>
 <Script src="assets/js/jarallax.min.js"></Script>
