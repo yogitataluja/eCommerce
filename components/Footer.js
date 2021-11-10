@@ -5,7 +5,8 @@ import {API} from "./API"
 const Footer = () => {
   const[configuration, setConfiguration]=useState(null)
   const[category, setCategory]=useState([])
-  
+  const [page, setPage] = useState(null);
+  const [email, setEmail] = useState("");
 
   useEffect(()=>{
     getConfig()

@@ -32,7 +32,7 @@ async function getBasicConfig(){
                             <div className="col-lg-8 col-12 tc tl_lg col-md-12 dn_false_1024">
                                 <div className="header-text">
                                     Start earning Rewards points when you shop! <span className="cr">50%</span>!
-                                    <a href="#"><strong>JOIN NOW</strong></a>
+                                    {/* <a href="#"><strong>JOIN NOW</strong></a> */}
                                 </div>
                             </div>
                         </div>

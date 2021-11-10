@@ -28,7 +28,7 @@ const Navigation = ({active}) => {
                       key={index}
                       className="type_mega menu_wid_cus menu-item has-children menu_has_offsets menu_center pos_center"
                     >
-                      <div class="dropdown type_mn_link menu-item sub-column-item col-3">
+                      <div className="dropdown type_mn_link menu-item sub-column-item col-3">
                         <a
                           href={`/allProducts/${cate.category}`}
                           style={{ color: "black", whiteSpace: "nowrap" }}
@@ -40,12 +40,12 @@ const Navigation = ({active}) => {
                           )}
                         </a>
 
-                        <div class="dropdown-content">
+                        <div className="dropdown-content">
                           {cate.subCategory.map((subcate) => {
                             return (
                               <a
                                 href={`/shop/${cate.category}/${subcate.category}`}
-                                className="lh__1 flex al_center pr kalles-lbl__nav-sale"
+                                classNameName="lh__1 flex al_center pr kalles-lbl__nav-sale"
                               >
                                 {subcate.category}
                               </a>
