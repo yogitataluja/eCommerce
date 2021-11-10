@@ -41,11 +41,13 @@ const Navigation = ({active}) => {
                         </a>
 
                         <div className="dropdown-content">
-                          {cate.subCategory.map((subcate) => {
+                          {cate.subCategory.map((subcate, index) => {
                             return (
                               <a
                                 href={`/shop/${cate.category}/${subcate.category}`}
                                 classNameName="lh__1 flex al_center pr kalles-lbl__nav-sale"
+                                key={index}
+
                               >
                                 {subcate.category}
                               </a>

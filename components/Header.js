@@ -1,6 +1,7 @@
 import axios from "axios";
 import {useState, useEffect} from "react"
 import { API } from "./API";
+import Link from "next/link"
 const Header = () => {
 const[basicconfig, setBasicConfig]=useState({
     address:[],
@@ -76,9 +77,9 @@ async function getBasicConfig(){
                                     <div className="my-account ts__05 pr dn db_md">
                                         <a className="cb chp db push_side" href="#" data-id="#nt_login_canvas"><i className="iccl iccl-user"></i></a>
                                     </div>
-                                    <a className="icon_like cb chp pr dn db_md js_link_wis" href="#">
+                                    <Link className="icon_like cb chp pr dn db_md js_link_wis" href="#">
                                         <i className="iccl iccl-heart pr"><span className="op__0 ts_op pa tcount bgb br__50 cw tc">5</span></i>
-                                    </a>
+                                    </Link>
                                     <div className="icon_cart pr">
                                         <a className="push_side pr cb chp db" href="#" data-id="#nt_cart_canvas">
                                             <i className="iccl iccl-cart pr"><span className="op__0 ts_op pa tcount bgb br__50 cw tc">3</span></i>
