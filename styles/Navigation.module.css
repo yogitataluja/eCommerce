@@ -5,6 +5,7 @@
     padding-left: 80px;
     font-size: 16px;
     border: none;
+    cursor: default;
   }
   
   .dropdown {
