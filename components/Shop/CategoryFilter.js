@@ -48,7 +48,7 @@ const router = useRouter()
                           <input type="radio" id={item._id} name="50-100" value={item._id}
                             aria-label="Narrow selection to products matching tag price Rs. 50-Rs. 100" onChange={e => handleCheckBox(item.min, item.max)} style={{border:"none", textDecoration:"none"}}
                           />
-                          <label for={item._id} style={{paddingLeft:"13px" , color:"black" , "hover":{color: "#efefef"}}}> {item.text===undefined ?<> Rs. {item.min}- {item.max!=undefined ?<>Rs. {item.max}</>:<>above</>}</>:<>{item.text}</>}</label>
+                          <label htmlFor={item._id} style={{paddingLeft:"13px" , color:"black" , "hover":{color: "#efefef"}}}> {item.text===undefined ?<> Rs. {item.min}- {item.max!=undefined ?<>Rs. {item.max}</>:<>above</>}</>:<>{item.text}</>}</label>
                         </li>
                       )}
 
