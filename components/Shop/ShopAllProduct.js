@@ -24,7 +24,7 @@ const ShopAllProduct = ({products}) => {
                                   </span>
                                   <a
                                     className="d-block"
-                                    href={`productdetails/${item._id}`}
+                                    href={`/productdetails/${item._id}`}
                                   >
                                     <div
                                       className="pr_lazy_img main-img nt_img_ratio nt_bg_lz lazyload padding-top__127_571"
@@ -61,7 +61,7 @@ const ShopAllProduct = ({products}) => {
                                   <h3 className="product-title pr fs__14 mg__0 fwm">
                                     <a
                                       className="cd chp"
-                                      href={`productdetails/${item._id}`}
+                                      href={`/productdetails/${item._id}`}
                                     >
                                       {item.title}
                                     </a>

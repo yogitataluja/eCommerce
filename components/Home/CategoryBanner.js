@@ -47,7 +47,7 @@ const CategoryBanner = () => {
                       >
                         <div className="cat_grid_item__content pr oh">
                           <a
-                            href={`/allProducts/${item.category}`}
+                            href={`/shop/${item.category}`}
                             className="db cat_grid_item__link"
                           >
                             <div

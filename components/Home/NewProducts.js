@@ -37,7 +37,7 @@ useEffect(()=>{
                           <span>-34%</span>
                         </span>
                       </span> */}
-                      <a className="db" href={`/productDetails/${product._id}`}>
+                      <a className="db" href={`/productdetails/${product._id}`}>
                         <div
                         style={{width:265,height:320}}
                           className="pr_lazy_img main-img nt_img_ratio nt_bg_lz lazyload padding-top__100"
@@ -63,7 +63,7 @@ useEffect(()=>{
                       <h3 className="product-title pr fs__14 mg__0 fwm">
                         <a
                           className="cd chp"
-                          href={`/productDetails/${product._id}`}
+                          href={`/productdetails/${product._id}`}
                         >
                           {product.title}
                         </a>

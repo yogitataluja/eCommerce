@@ -1,15 +1,6 @@
 import "../styles/globals.css";
 import Script from 'next/script'
-// import "../public/assets/css/base.css";
-// import "../public/assets/css/defined.css";
-// import "../public/assets/css/bootstrap.min.css";
-// import "../public/assets/css/reset.css";
-// import "../public/assets/css/drift-basic.min.css";
-// import "../public/assets/css/flickity-fade.css";
-// import "../public/assets/css/style.css";
-// import "../public/assets/css/home-default.css";
-// import "../public/assets/css/blog.css";
-// import "../public/assets/css/font-icon.min.css";
+
 
 import Layout from '../components/Layout'
 
@@ -26,7 +17,7 @@ function MyApp({ Component, pageProps }) {
           <Script src="/assets/js/nouislider.min.js"></Script>
           <Script src="/assets/js/jarallax.min.js"></Script>
           <Script src="/assets/js/packery.pkgd.min.js"></Script>
-          <Script src="/assets/js/magnific-popup.min.js"></Script>
+          {/* <Script src="/assets/js/magnific-popup.min.js"></Script> */}
           <Script src="/assets/js/flickity.pkgd.min.js"></Script>
           <Script src="/assets/js/lazysizes.min.js"></Script>
           <Script src="/assets/js/js-cookie.min.js"></Script>

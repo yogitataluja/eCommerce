@@ -31,7 +31,7 @@ async function getProducts(){
                 <div className="product-inner pr">
                   <div className="product-image pr oh lazyload">
                     <span className="tc nt_labels pa pe_none cw"><span className="nt_label new">New</span></span>
-                    <a className="db" href="product-detail.html">
+                    <a className="db" href="productdeatils">
                       <div className="pr_lazy_img main-img nt_img_ratio nt_bg_lz lazyload padding-top__100" data-bgset={i?.featuredImage} style={{height:320,width:265}}/>
                     </a>
                     <div className="hover_img pa pe_none t__0 l__0 r__0 b__0 op__0">
