@@ -5,7 +5,7 @@ import ReactImageMagnify from "react-image-magnify";
 import {API} from "../../components/API"
 import Navigation from "../../components/Navigation"
 
-const productId = ({productId}) => {
+const ProductId = ({productId}) => {
     const myref= useRef(null)
     const [productDetailes, setproductDetailes] = useState({});
     const [index, setIndex] = useState(0);
@@ -386,7 +386,7 @@ const productId = ({productId}) => {
     )
 }
 
-export default productId
+export default ProductId
 
 
 export async function getServerSideProps(context) {
