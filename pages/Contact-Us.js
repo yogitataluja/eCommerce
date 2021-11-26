@@ -43,28 +43,28 @@ const Contactus = () => {
     <>
       <Navigation />
       <div id="nt_content" style={{ marginTop: "20px" }}>
-        <div class="kalles-section page_section_heading">
-          <div class="page-head tc pr oh cat_bg_img page_head_">
+        <div className="kalles-section page_section_heading">
+          <div className="page-head tc pr oh cat_bg_img page_head_">
             <div
-              class="parallax-inner nt_parallax_false lazyload nt_bg_lz pa t__0 l__0 r__0 b__0"
+              className="parallax-inner nt_parallax_false lazyload nt_bg_lz pa t__0 l__0 r__0 b__0"
               data-bgset="assets/images/shop/shop-banner.jpg"
             ></div>
-            <div class="container pr z_100">
-              <h1 class="mb__5 cw">Contact Us</h1>
-              <p class="mg__0">
+            <div className="container pr z_100">
+              <h1 className="mb__5 cw">Contact Us</h1>
+              <p className="mg__0">
                 Follow your passion, and success will follow you
               </p>
             </div>
           </div>
         </div>
 
-        <div class="kalles-section container mb__50 cb">
-          <div class="row fl_center">
-            <div class="contact-form col-12 col-md-6 order-1 order-md-0">
-              <form method="post" action="#" class="contact-form">
-                <h3 class="mb__20 mt__40">DROP US A LINE</h3>
+        <div className="kalles-section container mb__50 cb">
+          <div className="row fl_center">
+            <div className="contact-form col-12 col-md-6 order-1 order-md-0">
+              <form method="post" action="#" className="contact-form">
+                <h3 className="mb__20 mt__40">DROP US A LINE</h3>
                 <p>
-                  <label for="ct-name">Your Name (required)</label>
+                  <label htmlFor="ct-name">Your Name (required)</label>
                   <input
                     value={name}
                     onChange={(e) => setName(e.target.value)}
@@ -75,7 +75,7 @@ const Contactus = () => {
                   />
                 </p>
                 <p>
-                  <label for="ct-email">Your Email (required)</label>
+                  <label htmlFor="ct-email">Your Email (required)</label>
                   <input
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
@@ -86,7 +86,7 @@ const Contactus = () => {
                   />
                 </p>
                 <p>
-                  <label for="ct-phone">Your Phone Number</label>
+                  <label htmlFor="ct-phone">Your Phone Number</label>
                   <input
                     value={phoneNo}
                     onChange={(e) => setphoneNo(e.target.value)}
@@ -110,39 +110,39 @@ const Contactus = () => {
                 <input
                   onClick={(e) => handleSubmit(e)}
                   type="submit"
-                  class="button w__100"
+                  className="button w__100"
                   value="Send"
                 />
               </form>
             </div>
-            <div class="contact-content col-12 col-md-6 order-0 order-md-1">
-              <h3 class="mb__20 mt__40">CONTACT INFORMATION</h3>
+            <div className="contact-content col-12 col-md-6 order-0 order-md-1">
+              <h3 className="mb__20 mt__40">CONTACT INFORMATION</h3>
               <p>
                 We love to hear from you on our customer service, merchandise,
                 website or any topics you want to share with us. Your comments
                 and suggestions will be appreciated. Please complete the form
                 below.
               </p>
-              <p class="mb__5 d-flex">
-                <i class="las la-home fs__20 mr__10 text-primary"></i>{" "}
+              <p className="mb__5 d-flex">
+                <i className="las la-home fs__20 mr__10 text-primary"></i>{" "}
                 {address?.company},{address?.address},{address?.city},
                 {address?.state}
               </p>
-              <p class="mb__5 d-flex">
-                <i class="las la-phone fs__20 mr__10 text-primary"></i>
+              <p className="mb__5 d-flex">
+                <i className="las la-phone fs__20 mr__10 text-primary"></i>
                 {address?.contact}
               </p>
-              <p class="mb__5 d-flex">
-                <i class="las la-envelope fs__20 mr__10 text-primary"></i>{" "}
+              <p className="mb__5 d-flex">
+                <i className="las la-envelope fs__20 mr__10 text-primary"></i>{" "}
                 <a
-                  class="__cf_email__"
+                  className="__cf_email__"
                   data-cfemail="d6b5b9b8a2b7b5a296b5b9bba6b7b8aff8b5b9bb"
                 >
                   {address?.email}
                 </a>
               </p>
-              <p class="mb__5 d-flex">
-                <i class="las la-clock fs__20 mr__10 text-primary"></i> Everyday
+              <p className="mb__5 d-flex">
+                <i className="las la-clock fs__20 mr__10 text-primary"></i> Everyday
                 9:00-18:00
               </p>
             </div>

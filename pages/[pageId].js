@@ -22,7 +22,7 @@ const getPageByUrl= async()=>{
          <Navigation/> 
          {data===  null? 
          <>
-         ""
+         &quot &quot
          </>
          :  
          <div id="nt_content" style={{marginTop:"20px"}}>
