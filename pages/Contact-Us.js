@@ -97,7 +97,7 @@ const Contactus = () => {
                   />
                 </p>
                 <p>
-                  <label for="ct-message">Your Message</label>
+                  <label htmlFor="ct-message">Your Message</label>
                   <textarea
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
