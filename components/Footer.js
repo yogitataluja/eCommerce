@@ -14,8 +14,7 @@ const Footer = () => {
     getPages()
   },[])
   const getPages = async () => {
-    const res = await axios.get(`${API}/api/page/view_page`);
-    console.log(res);
+    const res = await axios.get(`${API}/api/page/view_page`)
     setPage(res.data.Page);
   };
 async function getConfig(){
@@ -98,7 +97,7 @@ async function getCategory() {
                         <div className="menu_footer widget_footer" key={index}>
                       <ul className="menu" >
                         <li className="menu-item">
-                          <a href="#">{i.title}</a>
+                          <a href={i.url}>{i.title}</a>
                         </li>
                       </ul>
                     </div>))}

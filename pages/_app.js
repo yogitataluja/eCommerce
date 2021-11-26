@@ -27,7 +27,7 @@ function MyApp({ Component, pageProps }) {
           <Script src="/assets/js/drift.min.js"></Script>
           <Script src="/assets/js/isotope.pkgd.min.js"></Script>
           <Script src="/assets/js/resize-sensor.min.js"></Script>
-          <Script src="/assets/js/theia-sticky-sidebar.min.js"></Script>
+          {/* <Script src="/assets/js/theia-sticky-sidebar.min.js"></Script> */}
 
           <Script
             src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
