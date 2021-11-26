@@ -25,9 +25,14 @@ const BottomBanner = () => {
                     <div 
                     key={index} className="pin__wr_js col_ins col-lg-2 col-md-3 col-6 item pr oh">
               
-                <div className="wrap_ins_img db pr oh">
-                  <div className="lazyload nt_bg_lz pr_lazy_img" data-bgset={item.image} />
-                </div>
+              <div className="wrap_ins_img db pr oh">
+                    <a href={`/shop/${item.category}`}>
+                      <div
+                        className="lazyload nt_bg_lz pr_lazy_img"
+                        data-bgset={item.image}
+                      ></div>
+                    </a>
+                  </div>
               </div>  
                   )
               })
