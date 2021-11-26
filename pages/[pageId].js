@@ -21,9 +21,7 @@ const getPageByUrl= async()=>{
         <>
          <Navigation/> 
          {data===  null? 
-         <>
-         &quot &quot
-         </>
+       null
          :  
          <div id="nt_content" style={{marginTop:"20px"}}>
 
